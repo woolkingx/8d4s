@@ -12,8 +12,11 @@
 A framework that transforms AI from **reactive** to **reflective**, built on three properties of how LLMs actually work:
 
 1. **Attention mechanism** — the model only attends to tokens present in context. No trigger token, no activation.
-2. **Statistical patterns** — tokens activate co-occurrence patterns learned during training. "Wait..." statistically precedes self-correction in training data, so it triggers self-correction in generation.
+   - *e.g.* Place "CQRS" in context → model activates read/write separation knowledge. Without the token, that knowledge stays dormant.
+2. **Statistical patterns** — tokens activate co-occurrence patterns learned during training.
+   - *e.g.* "Wait..." statistically precedes self-correction in training data, so generating "Wait..." triggers self-correction mode.
 3. **Context-driven triggering** — the model has no "memory" outside current context. Discourse markers in the prompt seed the initial triggers; the model's own output then becomes input for the next token, creating a **self-augmenting context** where each reasoning step fuels the next.
+   - *e.g.* Model outputs "Let me think..." → token re-enters context → triggers deliberation → model outputs "Actually..." → triggers self-repair → chain continues.
 
 ### The Core Insight
 
