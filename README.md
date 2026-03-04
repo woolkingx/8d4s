@@ -163,7 +163,7 @@ Claude, GPT-4, Gemini Pro, and other LLMs with strong reasoning capability.
 
 - [prompt.md](./prompt.md) — Ready-to-use system prompt
 - [example.md](./example.md) — Case studies with emergent reflection
-- [READMD_zh.md](./READMD_zh.md) — Full documentation in Chinese
+- [README_zh.md](./README_zh.md) — Full documentation in Chinese
 
 ---
 
